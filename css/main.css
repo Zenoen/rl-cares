@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap");
+*
+{
+    font-family: "Kiwi Maru", serif;
+}
+
+
+:root
+{
+    --purple: #6A7AFF;
+    --orange: #F19A56;
+}
+
+
+/*makes img files not draggable*/
+.selector {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.text-content
+{
+    font-size: 15px !important;
+}
+
+.text-content-color
+{
+    color: black !important;
+}
+
+/*custom h1 font*/
+.h1
+{
+    font-size: 50px;
+}
+
+.a-nocolor
+{
+    color: black;
+}
+
+.a-nocolor :hover
+{
+    color: #6A7AFF;
+}
+
+.btn-active
+{
+    background-color: #9F968D !important;
+    color: white !important;
+}
+
+/*custom padding top and bottom*/
+.custom-ptpb
+{
+    padding-top: 7rem;
+    padding-bottom: 12rem
+}
+
+
+
+
+
+
+/*Nav Bar*/
+.navbar-custom 
+{
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    padding: 5px 30px;
+}
+
+.navbar-nav 
+{
+    margin: auto;
+}
+
+.nav-link 
+{
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav-link.active 
+{
+    color: #6A7AFF !important; /* Link color for active page */
+}
+
+.nav-link:hover 
+{
+    text-decoration: underline !important;
+}
+
+.btn-book-now 
+{
+    background-color: var(--orange);
+    color: white;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.btn-log-out 
+{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.btn-log-out:hover 
+{
+    background-color: black !important;
+    color: gray !important;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.btn-book-now:hover 
+{
+    background-color: #ff9a4d;
+    font-size: 14px;
+}
+
+.navbar-brand 
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.review-badge {
+    background-color: #FFBD89;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    justify-content: space-around;
+  }
+
+.avatars {
+    display: flex;
+  }
+
+.avatar 
+{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -10px;
+    z-index: 1;
+
+}
+
+.review-text {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+
+
+
+
+/*Custom Cards*/
+
+.custom-card-1
+{
+    background-color: var(--purple)!important;
+    color:white!important;
+    font-weight: lighter!important;
+    border-style: none!important;
+    border-radius: 20px!important;
+}
+
+.custom-card-2
+{
+    background-color: var(--orange) !important;
+    color:white !important;
+    font-weight: lighter !important;
+    border-style: none; border-radius: 20px !important;
+}
+
+.custom-card-btn-1
+{
+    background-color: white !important;
+    color: black !important;
+    border-radius: 50px !important;
+    border-style: none !important;
+}
+
+.custom-card-btn-2 
+{
+    background-color: black !important;
+    color: white !important;
+    border-radius: 50px !important;
+    border-style: none !important;
+} 
+
+.custom-card-btn-2 :hover
+{
+    background-color: white ;
+    color: black;
+}
+
+.custom-card-head
+{
+    font-size: 30px !important;
+}
+
+.background
+{
+    background-image: url(../img/paws-background.png);
+}
+
+.custom-img-border
+{
+    border-radius: 12px;
+}
+
+/*rotates images*/
+.rotate
+{
+    transform: rotate(120deg);
+}
+
+
+
+
+/*Footer Section*/
+.footer {
+    background-color: #fff;
+    padding: 10px 0 100px 0;
+  }
+
+  .footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-input
+  {
+    border-radius: 50px;
+    padding: 7px;
+    width: 100%;
+    border: 1px solid #000;
+    outline: none;
+  }
+
+  .social-icons img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+  }

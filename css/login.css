@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap");
+*
+{
+    font-family: "Kiwi Maru", serif;
+}
+
+.main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*side-image*/
+.side-image
+{
+    display: flex;
+    background-image: url("../img/dog.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 110px;
+}
+
+/*left-container*/
+.left
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+    background-color: #FFBD89;
+    border-radius: 15px 0 0 15px;
+}
+
+/*right-container*/
+.right
+{
+    border-radius: 0 15px 15px 0;
+}
+
+/*input-fields*/
+.input-fields-custom
+{
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    border-color: white;
+    padding:8px;
+    color:black;
+    border: 2px solid white;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+/*boostrap container*/
+.row
+{
+  width:  110vh;
+  min-height: 70vh;
+  background: var(--white);
+  padding: 0px;
+  box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+  animation: transitionIn-Y-over 0.5s;
+  border-radius: 15px;
+}
+
+/*login-button*/
+.login
+{
+    width: 100%;
+    background-color: black;
+    color: white !important;
+    border-radius: 20px;
+    height: 40px;
+    border-style: none;
+}
+
+/*other-texts*/
+.text-content
+{
+    font-size: 14px;
+}
+
+/*link-hover underline*/
+a.text-content:hover {
+    text-decoration: underline !important;
+}
+
+/*horizontal divider between a word*/
+.or-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid black;
+    margin: 0 10px;
+}

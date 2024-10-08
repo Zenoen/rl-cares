@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RL Cares</title>
+    <link rel = "stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css">
+    <link rel = "stylesheet" type="text/css" href="../css/main.css">
+    <link rel = "stylesheet" type="text/css" href="../css/form.css">
+    <link rel = "stylesheet" type="text/css" href="../css/bootstrap/icons/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container-xxl">
+
+            <!--customized-header-->
+            <div class="pt-4">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+                    <div class="container-fluid">
+                    
+                    <a class="navbar-brand" href="index.html"><img src="../img/logo.png" height="45px" width="45px" class="m-0 selector"></a>
+                
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="appointments.html">Appointments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact</a>
+                        </li>
+                        </ul>
+                    </div>
+                
+                    <a href="booking.html" class="btn btn-book-now btn-active">Book Now</a>
+                    <a href="../login.html" class="btn btn-log-out mx-1 ">Log Out</a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="container custom-ptpb">
+              <div class="appointment-form">
+                <h2>Set an Appointment</h2>
+                <form class="mx-5">
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <label for="parentName" class="form-label">Parent Name:</label>
+                      <input type="text" class="form-control" id="parentName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="phoneNumber" class="form-label">Phone Number:</label>
+                      <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+                    </div>
+                  </div>
+              
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <label for="meetDate" class="form-label">Meet Date:</label>
+                      <input type="date" class="form-control" id="meetDate" required>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <label for="timeSlot" class="form-label">Available Time Slots:</label>
+                      <select class="form-control" id="timeSlot" required>
+                        <option value="">Select a time slot</option>
+                      </select>
+                    </div>
+                  </div>
+              
+                  <!-- Time Slot Selector based on Date -->
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <label for="petName" class="form-label">Pet Name:</label>
+                      <input type="text" class="form-control" id="petName" placeholder="Enter pet's name" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="petSpecies" class="form-label">Pet Species:</label>
+                      <input type="text" class="form-control" id="petSpecies" placeholder="Enter pet species" required>
+                    </div>                    
+                  </div>
+              
+                  <div class="row mb-4">
+                    
+                    <div class="col-md-6">
+                      <label for="appointmentType" class="form-label">Appointment Type:</label>
+                      <select class="form-control" id="appointmentType" required>
+                        <option value="">Select Type</option>
+                        <option value="general">General Checkup</option>
+                        <option value="vaccination">Vaccination</option>
+                        <option value="emergency">Emergency</option>
+                      </select>
+                    </div>
+                  </div>
+              
+                  <!-- General Checkup Fields -->
+                  <div id="generalFields" class="conditionalFields" style="display: none;">
+                    <div class="row mb-4">
+                      <div class="col-md-12">
+                        <label for="generalNotes" class="form-label">Additional Notes:</label>
+                        <textarea class="form-control" id="generalNotes" placeholder="Enter any additional notes"></textarea>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Vaccination Fields -->
+                  <div id="vaccinationFields" class="conditionalFields" style="display: none;">
+                    <div class="row mb-4">
+                      <div class="col-md-6">
+                        <label for="vaccineType" class="form-label">Select Vaccine:</label>
+                        <select class="form-control" id="vaccineType">
+                          <option value="rabies">Rabies</option>
+                          <option value="distemper">Distemper</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="vaccineHistory" class="form-label">Vaccination History:</label>
+                        <textarea class="form-control" id="vaccineHistory" placeholder="Enter vaccination history"></textarea>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Emergency Fields -->
+                  <div id="emergencyFields" class="conditionalFields" style="display: none;">
+                    <div class="row mb-4">
+                      <div class="col-md-12">
+                        <label for="emergencyDetails" class="form-label">Describe the Emergency:</label>
+                        <textarea class="form-control" id="emergencyDetails" placeholder="Describe the emergency"></textarea>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="form-check mb-3 pt-2 pb-3">
+                    <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
+                    <label class="form-check-label" for="privacyPolicy">
+                      I have read and agree to the <a href="#">Privacy Policy</a>
+                    </label>
+                  </div>
+              
+                  <div class="pt-3">
+                    <button type="submit" class="btn btn-custom" id="bookNowButton" disabled>Book Now</button>
+                  </div>
+                </form>
+              </div>                  
+            </div>
+
+
+            <!--customized-footer-->
+            <div class="container">
+                <footer class="footer">
+                        <div class="row justify-content-between">
+                        
+                        <!-- Left Section: Social Icons and Text -->
+                            <div class="col-md-4 footer-left text-md-left">
+                                <p class="fw-bold">Take care of your pets!</p>
+                                <p>Befriend Us</p>
+                                <div class="social-icons mb-2">
+                                    <a href="https://www.facebook.com/RLSumabalVetClinic" target="_blank"><img src="../img/icons/fb.svg" alt="Facebook"></a>
+                                </div>
+                                <p class="pt-1">2023<br>By Jado</p>
+                            </div>
+
+                            <div class="col-md-4 footer-right">
+                                <p class="mx-1">MailBox</p>
+                                <div class="d-flex justify-content-between">
+                                    <input type="email" class="footer-input mx-1">
+                                    <a href="#" class="btn btn-primary custom-card-btn-2 mx-1">Submit</a>
+                                </div>
+                                <p class="text-end pt-3">2024 "RL Cares"</p>
+                            </div>
+                  
+                        </div>
+                  
+                </footer>
+            </div>
+
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.getElementById('appointmentType').addEventListener('change', function () {
+    var appointmentType = this.value;
+
+    // Hide all conditional fields
+    var conditionalFields = document.querySelectorAll('.conditionalFields');
+    conditionalFields.forEach(function (field) {
+      field.style.display = 'none';
+    });
+
+    // Show fields based on the selected appointment type
+    if (appointmentType === 'general') {
+      document.getElementById('generalFields').style.display = 'block';
+    } else if (appointmentType === 'vaccination') {
+      document.getElementById('vaccinationFields').style.display = 'block';
+    } else if (appointmentType === 'emergency') {
+      document.getElementById('emergencyFields').style.display = 'block';
+    }
+  });
+
+  //Enable or disable the Book Now button based on privacy policy checkbox
+  document.getElementById('privacyPolicy').addEventListener('change', function () {
+    var bookNowButton = document.getElementById('bookNowButton');
+    bookNowButton.disabled = !this.checked;  // Enable if checked, disable if unchecked
+  });
+</script>
+
+<script>
+      document.getElementById('meetDate').addEventListener('change', function() {
+      const selectedDate = this.value;
+      const timeSlotDropdown = document.getElementById('timeSlot');
+      
+      // Clear previous options
+      timeSlotDropdown.innerHTML = '<option value="">Select a time slot</option>';
+
+      //Fetch available time slots for the selected date
+      const availableTimeSlots = ['09:00 AM', '10:30 AM', '12:00 PM', '02:00 PM', '03:30 PM']; // Can be replaced with actual data
+      
+      // Populate the dropdown with available time slots
+      availableTimeSlots.forEach(slot => {
+          const option = document.createElement('option');
+          option.value = slot;
+          option.textContent = slot;
+          timeSlotDropdown.appendChild(option);
+      });
+  });
+</script>
+
+</body>
+</html>

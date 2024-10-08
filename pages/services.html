@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RL Cares</title>
+    <link rel = "stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css">
+    <link rel = "stylesheet" type="text/css" href="../css/main.css">
+    <link rel = "stylesheet" type="text/css" href="../css/yt-modal.css">
+    <link rel = "stylesheet" type="text/css" href="../css/bootstrap/icons/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container-xxl">
+
+            <!--customized-header-->
+            <div class="pt-4">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+                    <div class="container-fluid">
+                    
+                    <a class="navbar-brand" href="index.html"><img src="../img/logo.png" height="45px" width="45px" class="m-0 selector"></a>
+                
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="appointments.html">Appointments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="services.html">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact</a>
+                        </li>
+                        </ul>
+                    </div>
+                
+                    <a href="booking.html" class="btn btn-book-now">Book Now</a>
+                    <a href="../login.html" class="btn btn-log-out mx-1 ">Log Out</a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="container-xxl py-5">
+                <div class="card m-2 custom-card-1 background">
+                    <div class="card-body mx-2 d-flex">
+                        <div class="col text-wrap">
+
+                            <h5 class="card-title custom-card-head">Assess your Dog's Body Condition Score</h5>
+
+                            <div class="pt-xl-5">
+                                <a href="#" class="btn btn-primary custom-card-btn-1">Explore it <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="col align-items-center justify-content-center d-flex">
+                            <div class="d-flex align-items-center">
+                                <img src="../img/dog.svg" class="selector mx-auto d-block" height="160px">
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <div class="d-flex">
+                            <div class="card w-100 m-2 custom-card-1">
+                                <div class="card-body mx-2 d-flex justify-content-between">
+                                    <div>
+                                        <h5 class="card-title custom-card-head">Healthcare</h5>
+                                        <p class="card-text text-content pt-3">Exact diagnosis of animal diseases:</p>
+                                        <ul>
+                                            <li class="text-content">Health checks;</li>
+                                            <li class="text-content">Complete analysis of blood and urine;</li>
+                                            <li class="text-content">Biochemical analysis of blood;</li>
+                                            <li class="text-content">Ultrasound and digital radiology (X-ray)</li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <div class="ms-2 align-items-center d-flex">
+                                        <img src="../img/healthcare.svg" class="img-fluid selector">
+                                    </div>
+
+                                    <div  class="ms-2 align-items-center d-flex">
+                                        <a href="healthcare-service.html" class="btn btn-primary custom-card-btn-1"><i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--video-card-->
+                            <div class="m-2 video-card shadow-lg">
+                                <img src="../img/cat.jpg" alt="Video Thumbnail"  class="img-fluid">
+                                <button class="play-button" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                  ▶
+                                </button>
+                            </div>                 
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="card w-100 m-2 custom-card-1">
+                                <div class="card-body mx-2 d-flex justify-content-between">
+                                    <div>
+                                        <h5 class="card-title custom-card-head">Daycare</h5>
+                                        <p class="card-text text-content pt-3">Animal care services:</p>
+                                        <ul>
+                                            <li class="text-content">Passive immunization with serum</li>
+                                            <li class="text-content">Micro and macro-filling therapy</li>
+                                            <li class="text-content">Blood transfusion</li>
+                                            <li class="text-content">Dietology</li>
+                                            <li class="text-content">Urgent help</li>
+                                            <li class="text-content">Rehabilitation and daily maintenance</li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <div class="ms-2 align-items-center d-flex">
+                                        <img src="../img/daycare.svg" class="img-fluid selector">
+                                    </div>
+
+                                    <div  class="ms-2 align-items-center d-flex">
+                                        <a href="#" class="btn btn-primary custom-card-btn-1"><i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="m-2 video-card shadow-lg">
+                                <img src="../img/cat.jpg" alt="Video Thumbnail" class="img-fluid">
+                                <button class="play-button" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                  ▶
+                                </button>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="card m-2 w-25 custom-card-1" >
+                        <div class="m-3">
+                            <img src="../img/cons.jpg" class="card-img-top custom-img-border" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title custom-card-head">Consulting services related to animal care</h6>
+                            <div  class="pt-5 float-end">
+                                <a href="#" class="btn btn-primary custom-card-btn-1"><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card m-2 custom-card-1 background">
+                    <div class="card-body mx-2 d-flex">
+                        <div class="col text-wrap">
+
+                            <h5 class="card-title custom-card-head">Grooming</h5>
+                            <div class="d-flex">
+                                <div class="col">
+                                    <ul>
+                                        <li class="text-content">Brushing</li>
+                                        <li class="text-content">Nail clipping</li>
+                                        <li class="text-content">Drying</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <li class="text-content">Cleaning out ears</li>
+                                        <li class="text-content">Coat trimming</li>
+                                        <li class="text-content">Bathing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            
+
+                            <div class="pt-2">
+                                <a href="#" class="btn btn-primary custom-card-btn-1">See More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="col align-items-center justify-content-center d-flex">
+                            <div class="d-flex align-items-end">
+                                <img src="../img/groom.jpg" class="selector mx-auto d-block custom-img-border" height="160px">
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+      
+            </div>
+
+
+
+
+
+            <!--customized-footer-->
+            <div class="container">
+                <footer class="footer">
+                        <div class="row justify-content-between">
+                        
+                        <!-- Left Section: Social Icons and Text -->
+                            <div class="col-md-4 footer-left text-md-left">
+                                <p class="fw-bold">Take care of your pets!</p>
+                                <p>Befriend Us</p>
+                                <div class="social-icons mb-2">
+                                    <a href="https://www.facebook.com/RLSumabalVetClinic" target="_blank"><img src="../img/icons/fb.svg" alt="Facebook"></a>
+                                </div>
+                                <p class="pt-1">2023<br>By Jado</p>
+                            </div>
+
+                            <div class="col-md-4 footer-right">
+                                <p class="mx-1">MailBox</p>
+                                <div class="d-flex justify-content-between">
+                                    <input type="email" class="footer-input mx-1">
+                                    <a href="#" class="btn btn-primary custom-card-btn-2 mx-1">Submit</a>
+                                </div>
+                                <p class="text-end pt-3">2024 "RL Cares"</p>
+                            </div>
+                  
+                        </div>
+                  
+                </footer>
+            </div>
+
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!---video-modal-that-pops-up-when-clicking-play-button-->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoModalLabel">YouTube Video</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Embedded YouTube Video -->
+          <div class="ratio ratio-16x9">
+            <iframe id="youtube-video" src="" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+    // Script to load YouTube video dynamically when modal is opened
+    const videoModal = document.getElementById('videoModal');
+    videoModal.addEventListener('show.bs.modal', function (event) {
+      const iframe = document.getElementById('youtube-video');
+      iframe.src = "https://youtube.com/shorts/EkNUAROQytc?si=Pyktd4iH4-9EixRD"; // Replace with your YouTube video ID
+    });
+  
+    videoModal.addEventListener('hide.bs.modal', function () {
+      const iframe = document.getElementById('youtube-video');
+      iframe.src = ""; // Stop the video when modal is closed
+    });
+</script>
+
+
+
+</body>
+</html>
